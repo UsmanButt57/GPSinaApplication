@@ -10,7 +10,6 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/back_ground_image"
-        />
+        android:src="@drawable/back_ground_image" />
 
 </android.support.constraint.ConstraintLayout>

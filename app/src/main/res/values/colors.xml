@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="loginButtonColor">#FF6F20</color>
     <color name="signUpButtonColor">#109B2D</color>
+    <color name="white">#FFFFFF</color>
 </resources>

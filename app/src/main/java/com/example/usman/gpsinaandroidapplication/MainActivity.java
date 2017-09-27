@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button login;
     Button signUp;
+    Intent nextScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 //Starting a new Intent
-                Intent nextScreen = new Intent(getApplicationContext(), loginScreenActivity.class);
+                nextScreen = new Intent(getApplicationContext(), loginScreenActivity.class);
                 startActivity(nextScreen);
             }
         });
@@ -31,8 +32,9 @@ public class MainActivity extends AppCompatActivity {
         signUp.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 //Starting a new Intent
-                Intent nextScreen = new Intent(getApplicationContext(), signUpScreenActivity.class);
+                nextScreen = new Intent(getApplicationContext(), signUpScreenActivity.class);
                 startActivity(nextScreen);
+
             }
         });
 
