@@ -27,6 +27,9 @@
         <activity android:name=".signUpScreenActivity">
         </activity>
 
+        <activity android:name=".homeScreenActivity">
+        </activity>
+
     </application>
 
 </manifest>

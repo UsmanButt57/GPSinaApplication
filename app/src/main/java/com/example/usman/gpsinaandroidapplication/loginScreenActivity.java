@@ -55,19 +55,13 @@ public class loginScreenActivity extends AppCompatActivity {
                // Intent nextScreen = new Intent(getApplicationContext(), loginScreenActivity.class);
                // startActivity(nextScreen);
 
-                String email1 = userName.getText().toString();
-                String password1 =  Password.getText().toString();
-
-                Log.d("Email check", email1);
-                Log.d("password check", password1);
-
-                riderLogin(email1,password1);
+                userLogin();
             }
         });
 
     }
 
-    protected void riderLogin(String email,String password) {
+    protected void userLogin() {
         final ProgressDialog pDialog = new ProgressDialog(loginScreenActivity.this);
         pDialog.setMessage("Please wait !");
         pDialog.setIndeterminate(false);
@@ -79,11 +73,15 @@ public class loginScreenActivity extends AppCompatActivity {
         Map<String, String> jsonParams = new HashMap<String, String>();
         jsonParams.put("","");
 
+        String userName = this.userName.getText().toString();
+        String Password = this.Password.getText().toString();
+
         /*jsonParams.put("email",email);
         jsonParams.put("password",password);
         jsonParams.put("type","Owner");*/
+
         JsonObjectRequest postRequest = new JsonObjectRequest(Request.Method.GET, Sessions.LOGIN_URL +
-                "/?username="+email+"&password=" + password + "&type=Owner",
+                "/?username="+userName+"&password=" + Password + "&type=Owner",
 
                 new JSONObject(jsonParams),
                 new Response.Listener<JSONObject>() {
@@ -102,14 +100,16 @@ public class loginScreenActivity extends AppCompatActivity {
                         if(flag == true){
 
                             Log.d("TAG_F:- if success", flag.toString());
-
-
-
                             pDialog.dismiss();
+                            Toast.makeText(loginScreenActivity.this, "Successfully Login", Toast.LENGTH_SHORT).show();
+
+
                         }else{
 
                             Log.d("TAG_F:- if Fail", flag.toString());
                             pDialog.dismiss();
+                            Toast.makeText(loginScreenActivity.this, "invalid Email/Password", Toast.LENGTH_SHORT).show();
+
                         }
 
                     }

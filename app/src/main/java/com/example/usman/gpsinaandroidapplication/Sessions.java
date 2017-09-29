@@ -12,7 +12,11 @@ public class Sessions {
     //    public final static String SANDBOX_PAYPAL_ID = "AagcaqBBLoGCNno2O8gZXG_M-Ud5NX8XfG7tXuVLjkkhBSG6KzxYTEZ3g2adlhtm4fDLzrto5VSM7vTg";
 //    public final static String LIVE_PAYPAL_ID = "AFcWxV21C7fd0v3bYYYRCpSSRl31AACDTrz2XoItuYR.j4t9V9qmBrLV";
 
-    public static final String LOGIN_URL = "http://api.gpsina.com/account/MobileOwnerlogin";
+    public static final String LOGIN_URL = "http://apitest.gpsina.com/account/MobileOwnerlogin";
+
+    public static final String SignUpCheck_URL = "http://apitest.gpsina.com/account/CheckUserExist";
+
+    public static final String SignUpRegister_URL = "http://apitest.gpsina.com/account/OwnerRegister";
 
     public static final String SHARED_PREF_NAME = "foodies";
 
