@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">GPSinaAndroidApplication</string>
+    
+    <string-array name="imageArray">
+
+        <item>@drawable/image1</item>
+        <item>@drawable/image2</item>
+
+    </string-array>
+    
 </resources>

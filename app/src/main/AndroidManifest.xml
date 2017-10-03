@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".splash">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -27,7 +30,9 @@
         <activity android:name=".signUpScreenActivity">
         </activity>
 
-        <activity android:name=".homeScreenActivity">
+        <activity android:name=".homeScreenActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
         </activity>
 
     </application>

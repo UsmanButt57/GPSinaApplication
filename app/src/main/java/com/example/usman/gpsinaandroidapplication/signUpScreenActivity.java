@@ -1,6 +1,7 @@
 package com.example.usman.gpsinaandroidapplication;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 
 import java.text.SimpleDateFormat;
@@ -35,6 +36,7 @@ public class signUpScreenActivity extends AppCompatActivity {
 
     EditText email, password, confirmPassword, mobileNumber;
     Button signUpButton;
+    Intent nextScreen;
 
     /*Post data - FORM INPUT*/
     Map<String, String> jsonParams = new HashMap<String, String>();
@@ -260,6 +262,9 @@ public class signUpScreenActivity extends AppCompatActivity {
                             Log.d("TAG_F:- if success", flag.toString());
                             pDialog2.dismiss();
                             Toast.makeText(signUpScreenActivity.this, "Successfully Login", Toast.LENGTH_SHORT).show();
+
+                            nextScreen = new Intent(getApplicationContext(), homeScreenActivity.class);
+                            startActivity(nextScreen);
 
 
                         }else{

@@ -6,4 +6,5 @@
     <color name="loginButtonColor">#FF6F20</color>
     <color name="signUpButtonColor">#109B2D</color>
     <color name="white">#FFFFFF</color>
+    <color name="lightBlue">#26d0fb</color>
 </resources>

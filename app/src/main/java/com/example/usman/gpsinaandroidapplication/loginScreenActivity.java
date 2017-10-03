@@ -37,7 +37,7 @@ public class loginScreenActivity extends AppCompatActivity {
 
     Button loginButton;
     EditText userName, Password;
-
+    Intent nextScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +102,9 @@ public class loginScreenActivity extends AppCompatActivity {
                             Log.d("TAG_F:- if success", flag.toString());
                             pDialog.dismiss();
                             Toast.makeText(loginScreenActivity.this, "Successfully Login", Toast.LENGTH_SHORT).show();
+
+                            nextScreen = new Intent(getApplicationContext(), homeScreenActivity.class);
+                            startActivity(nextScreen);
 
 
                         }else{
