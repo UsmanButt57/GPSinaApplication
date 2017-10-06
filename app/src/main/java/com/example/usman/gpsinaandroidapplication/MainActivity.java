@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button signUp;
     Intent nextScreen;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">GPSinaAndroidApplication</string>
-    
-    <string-array name="imageArray">
 
-        <item>@drawable/image1</item>
-        <item>@drawable/image2</item>
+    <string name="text_home">Home Fragment</string>
+    <string name="text_notifications">Notifications Fragment</string>
+    <string name="text_search">Search Fragment</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Settings</string>
+    <string name="menu_notifications">Notifications</string>
 
-    </string-array>
-    
+
 </resources>

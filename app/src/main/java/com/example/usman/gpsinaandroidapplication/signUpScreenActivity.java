@@ -263,7 +263,7 @@ public class signUpScreenActivity extends AppCompatActivity {
                             pDialog2.dismiss();
                             Toast.makeText(signUpScreenActivity.this, "Successfully Login", Toast.LENGTH_SHORT).show();
 
-                            nextScreen = new Intent(getApplicationContext(), homeScreenActivity.class);
+                            nextScreen = new Intent(getApplicationContext(), homeScreenFragment.class);
                             startActivity(nextScreen);
 
 

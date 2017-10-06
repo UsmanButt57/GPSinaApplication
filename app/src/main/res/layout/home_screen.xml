@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
@@ -20,7 +22,6 @@
             android:layout_height="fill_parent"
             android:weightSum="2"
             android:orientation="vertical"
-
             android:layout_weight="1.36">
 
                 <RelativeLayout
@@ -104,19 +105,29 @@
                            android:layout_weight="0.9">
 
                            <EditText
+                               android:id="@+id/editText_VehicleNo"
                                android:layout_width="fill_parent"
                                android:layout_height="fill_parent"
                                android:background="@color/white"
                                android:layout_marginTop="10dp"
+                               android:paddingLeft="5dp"
+                               android:textSize="10dp"
                                android:layout_marginBottom="2dp"
+                               android:onClick="editTextVehicleNo"
+                               android:cursorVisible="false"
                                android:layout_weight="1"/>
 
 
                            <EditText
+                               android:id="@+id/editText_TrackerNo"
                                android:layout_width="fill_parent"
                                android:layout_height="fill_parent"
                                android:layout_marginTop="2dp"
                                android:layout_marginBottom="10dp"
+                               android:cursorVisible="false"
+                               android:onClick="editTextTrackerNo"
+                               android:paddingLeft="5dp"
+                               android:textSize="10dp"
                                android:background="@color/white"
                                android:layout_weight="1"/>
 
@@ -130,6 +141,7 @@
                         android:layout_weight="1.4">
 
                         <Button
+                            android:id="@+id/addDevice_Button"
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:text="Add Device"
@@ -163,6 +175,7 @@
                         android:weightSum="2">
 
                         <TextView
+                            android:id="@+id/textView_VehicleNo"
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:text="Vehicle No."
@@ -171,14 +184,17 @@
                             android:textSize="12dp"
                             android:textAlignment="viewEnd"
                             android:textColor="@color/white"
+                            android:clickable="true"
                             android:layout_weight="0.3"/>
 
                         <ImageView
+                            android:id="@+id/imageView_VehicleNo"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_weight="1.7"
                             android:paddingBottom="20dp"
-                            android:src="@drawable/caret_image"
+                            android:src="@drawable/caret_down"
+                            android:clickable="true"
                             android:layout_gravity="center_horizontal" />
 
                     </LinearLayout>
@@ -191,22 +207,26 @@
                         android:weightSum="2">
 
                         <TextView
+                            android:id="@+id/textView_TrackerNo"
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:text="Tracker No."
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="12dp"
+                            android:clickable="true"
                             android:textAlignment="viewEnd"
                             android:textColor="@color/white"
                             android:layout_weight="0.3"/>
 
                         <ImageView
+                            android:id="@+id/imageView_TrackerNo"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_weight="1.7"
                             android:paddingBottom="20dp"
-                            android:src="@drawable/caret_image"
+                            android:clickable="true"
+                            android:src="@drawable/caret_up"
                             android:layout_gravity="center_horizontal" />
 
                     </LinearLayout>
@@ -251,7 +271,6 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 
 </RelativeLayout>

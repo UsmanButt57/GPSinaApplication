@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".splash">
+        <activity android:name=".fragmentMainActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
 
 
             <intent-filter>
@@ -30,9 +31,8 @@
         <activity android:name=".signUpScreenActivity">
         </activity>
 
-        <activity android:name=".homeScreenActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-
+        <activity android:name=".splash"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
         </activity>
 
     </application>

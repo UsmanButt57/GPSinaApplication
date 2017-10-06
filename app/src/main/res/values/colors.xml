@@ -7,4 +7,9 @@
     <color name="signUpButtonColor">#109B2D</color>
     <color name="white">#FFFFFF</color>
     <color name="lightBlue">#26d0fb</color>
+
+    <color name="black">#000000</color>
+
+
+
 </resources>
